@@ -28,5 +28,5 @@ This project implements an unsupervised anomaly detection system using a deep au
 
 ## How to Run
 1. Open the notebook in Google Colab or Jupyter
-2. Upload dataset
+2. Upload dataset (https://doi.org/10.1184/R1/12841247)
 3. Run all cells sequentially
