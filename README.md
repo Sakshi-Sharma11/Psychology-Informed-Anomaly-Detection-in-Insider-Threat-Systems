@@ -209,7 +209,7 @@ This improves usability in SOC environments, where analysts require context for 
 ## How to Run
 
 1. Open the notebook in Jupyter or Google Colab  
-2. Upload the dataset (CERT logon/logoff data)  
+2. Upload the dataset (CERT logon/logoff data: https://doi.org/10.1184/R1/12841247)  
 3. Run all cells sequentially  
 4. View:
    - training loss curve  
