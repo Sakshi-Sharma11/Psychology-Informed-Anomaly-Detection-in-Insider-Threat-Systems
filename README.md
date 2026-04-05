@@ -5,7 +5,6 @@ This project implements an unsupervised anomaly detection system using a deep au
 
 The system not only detects anomalous behaviour but also enhances interpretability by mapping anomalies to psychology-inspired behavioural constructs such as boundary crossing, behavioural volatility, impulsive spikes, and persistence. This makes the output more meaningful and aligned with real-world Security Operations Centre (SOC) workflows.
 
----
 
 ## Methodology
 
@@ -26,7 +25,6 @@ Key features include:
 
 This transformation converts variable-length event logs into fixed-size feature vectors suitable for machine learning.
 
----
 
 ### 2. Feature Scaling
 All features are standardised using `StandardScaler` to ensure that differences in numeric scale do not bias the model.
@@ -35,7 +33,6 @@ This step is critical because:
 - Features like event counts and ratios are on different ranges
 - Scaling ensures equal contribution during training
 
----
 
 ### 3. Autoencoder Model
 A dense autoencoder is used to learn normal behavioural patterns.
@@ -48,7 +45,6 @@ This project implements an unsupervised anomaly detection system using a deep au
 
 The system not only detects anomalous behaviour but also enhances interpretability by mapping anomalies to psychology-inspired behavioural constructs such as boundary crossing, behavioural volatility, impulsive spikes, and persistence. This makes the output more meaningful and aligned with real-world Security Operations Centre (SOC) workflows.
 
----
 
 ## Methodology
 
@@ -69,7 +65,6 @@ Key features include:
 
 This transformation converts variable-length event logs into fixed-size feature vectors suitable for machine learning.
 
----
 
 ### 2. Feature Scaling
 All features are standardised using `StandardScaler` to ensure that differences in numeric scale do not bias the model.
@@ -77,8 +72,6 @@ All features are standardised using `StandardScaler` to ensure that differences 
 This step is critical because:
 - Features like event counts and ratios are on different ranges
 - Scaling ensures equal contribution during training
-
----
 
 ### 3. Autoencoder Model
 A dense autoencoder is used to learn normal behavioural patterns.
@@ -91,7 +84,6 @@ This project implements an unsupervised anomaly detection system using a deep au
 
 The system not only detects anomalous behaviour but also enhances interpretability by mapping anomalies to psychology-inspired behavioural constructs such as boundary crossing, behavioural volatility, impulsive spikes, and persistence. This makes the output more meaningful and aligned with real-world Security Operations Centre (SOC) workflows.
 
----
 
 ## Methodology
 
@@ -112,7 +104,6 @@ Key features include:
 
 This transformation converts variable-length event logs into fixed-size feature vectors suitable for machine learning.
 
----
 
 ### 2. Feature Scaling
 All features are standardised using `StandardScaler` to ensure that differences in numeric scale do not bias the model.
@@ -121,7 +112,6 @@ This step is critical because:
 - Features like event counts and ratios are on different ranges
 - Scaling ensures equal contribution during training
 
----
 
 ### 3. Autoencoder Model
 A dense autoencoder is used to learn normal behavioural patterns.
@@ -137,7 +127,6 @@ Input → 32 → 16 → 8 → 16 → 32 → Output
 The key idea is:
 > The model becomes good at reconstructing normal behaviour but struggles with unusual patterns.
 
----
 
 ### 4. Anomaly Detection
 After training, anomaly scores are computed using reconstruction error:
@@ -153,7 +142,6 @@ Threshold = mean(training error) + 2 × std(training error)
 
 - Values above this threshold are classified as anomalies
 
----
 
 ### 5. Interpretation Layer (Psychology-Informed Mapping)
 To improve interpretability, a rule-based layer maps anomalies to behavioural constructs:
@@ -167,7 +155,6 @@ Additionally, feature-wise reconstruction error is used to identify the **top co
 
 This step bridges the gap between detection and explanation.
 
----
 
 ## Results
 
@@ -194,8 +181,6 @@ The psychology-informed layer provided meaningful explanations for anomalies:
 
 This improves usability in SOC environments, where analysts require context for investigation.
 
----
-
 ## Technologies Used
 
 - Python
@@ -204,7 +189,6 @@ This improves usability in SOC environments, where analysts require context for 
 - PyTorch (autoencoder model)
 - Matplotlib (visualization)
 
----
 
 ## How to Run
 
@@ -216,7 +200,6 @@ This improves usability in SOC environments, where analysts require context for 
    - anomaly score distribution  
    - final results table  
 
----
 
 ## Key Takeaways
 
@@ -226,7 +209,6 @@ This improves usability in SOC environments, where analysts require context for 
 - Interpretation is essential — anomaly scores alone are not sufficient  
 - Combining machine learning with behavioural mapping improves real-world usability  
 
----
 
 ## Future Work
 
